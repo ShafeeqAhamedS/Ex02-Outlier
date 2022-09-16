@@ -36,7 +36,7 @@ Remove the outliers
 Plot the datas using Box Plot
 
 # CODE
-(1) & (2)
+## (1) & (2) Examine price_per_sqft column and use IQR to remove outliers and create new dataframe
 ```python
 import pandas as pd
 import numpy as np
@@ -74,7 +74,7 @@ df1.shape
 sns.boxplot(x="price_per_sqft",data=df1)
 ```
 
-(3)
+## (3) Examine price_per_sqft column and use zscore of 3 to remove outliers.
 ```python
 from scipy import stats
 
@@ -86,7 +86,7 @@ print(df2.shape)
 sns.boxplot(x="price_per_sqft",data=df2)
 ```
 
-(4)(i)
+## (4)(i) For the data set height_weight.csv detect weight outliers using IQR method
 ```python
 df3 = pd.read_csv("/content/drive/MyDrive/Colab Notebooks/Semester 3/19AI403 - Data Science/height_weight.csv")
 df3
@@ -120,7 +120,7 @@ df4.shape
 sns.boxplot(x="weight",data=df4)
 ```
 
-(4)(ii)
+## (4)(ii) For the data set height_weight.csv detect height outliers using IQR method
 ```python
 sns.boxplot(x="height",data=df3)
 
