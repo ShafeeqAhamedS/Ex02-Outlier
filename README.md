@@ -58,8 +58,8 @@ df.shape
 sns.boxplot(x="price_per_sqft",data=df)
 ```
 ```
-q1 = df['price_per_sqft'].quantile(0.35)
-q3 = df['price_Aper_sqft'].quantile(0.65)
+q1 = df['price_per_sqft'].quantile(0.25)
+q3 = df['price_Aper_sqft'].quantile(0.75)
 print("First Quantile =",q1,"\nSecond Quantile =",q3)
 
 IQR = q3-q1
